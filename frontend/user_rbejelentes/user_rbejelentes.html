@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Helix rendezvény bejelentése</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\User\Desktop\Projekt 2\pics\favicon.ico">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style1.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <!--Helix img + Navigacios bar-->
+    <div class="wrapper">
+        <img id="helix" src="C:\Users\User\Desktop\Projekt 2\pics\helixfelirat500.png"></img>
+        <div class="navbar">
+            <ul>
+                <li><a href="...">Rendezvény bejelentés</a></li>
+                <li><a href="...">Rendezvényeim</a></li>
+                <li><a href="...">Fotósok</a></li>
+                <li><a href="...">Videósok</a></li>
+                <li><a href="...">Naptár</a></li>
+                <li><a href="...">Egyéb...</a></li>
+                </ul>
+        </div>
+    </div>
+
+    <div class="wrapper2">
+        <!--User img + usernév jobb felső sarokban-->
+        <div class="userIcon">
+            <img id="user" src="Usericon.svg"></img>
+        </div>
+        <div class="userName">
+            <label>[Név]</label>
+        </div>
+
+        <!--Rendezvény bejelentés űrlap + gomb-->
+        <div class="content">
+            <h1> Rendezvény bejelentése (legyen szöveg?) </h1><br>
+            <form class="data">
+                <div>
+                 <input type="text" placeholder="Rendezvény neve">
+                </div>
+                <div>
+                 <input type="datetime" placeholder="Időpont">
+                </div>
+                <div>
+                    <input type="text" placeholder="Helyszín">
+                </div>
+                <div>
+                    <input type="text" placeholder="Szakbizottság/Szervező">
+                </div>
+                <div>
+                    <input type="tel" placeholder="Telefonszám">
+                </div>
+                <div>
+                    <input type="email" placeholder="e-mail">
+                </div>
+                <select>
+                    <option value="">Fotósok száma</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select><br>
+                <div>
+                    <input type="text" placeholder="Fotós 1">
+                </div>
+                <div>
+                    <input type="text" placeholder="Fotós 2">
+                </div>
+                <div>
+                    <input type="text" placeholder="Fotós 3">
+                </div>
+                <select>
+                    <option value="">Videósok száma</option>
+                    <option>Nem igénylek</option>
+                    <option>1</option>
+                    <option>2</option>
+                </select><br>
+            </form>
+        </div>
+        <div class="bejelBut">
+            <button type="button"> Beküldés </button>
+        </div>
+    </div>
+
+</body>
+
+</html>
