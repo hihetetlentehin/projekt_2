@@ -2,26 +2,26 @@
 <html>
 
 <head>
-  <title>Helix rendezvény bejelentése</title>
-  <link rel="icon" type="image/x-icon" href="C:\Users\User\Desktop\Projekt 2\pics\favicon.ico">
+  <title>Rendezvény bejelentés</title>
+  <link rel="icon" type="image/x-icon" href="C:\Users\User\Desktop\Projekt 2\pics\favicon.ico">  <!--forrást átírni!-->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style1.css" rel="stylesheet" type="text/css" />
+  <link href="user_rbejelentes.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <!--Helix img + Navigacios bar-->
     <div class="wrapper">
-        <img id="helix" src="C:\Users\User\Desktop\Projekt 2\pics\helixfelirat500.png"></img>
+        <img id="nav_img" src="C:\Users\User\Desktop\Projekt 2\pics\helixfelirat500.png"></img> <!--forrást átírni!-->
         <div class="navbar">
             <ul>
+                <li><a href="...">Kezdőlap</a></li>
                 <li><a href="...">Rendezvény bejelentés</a></li>
                 <li><a href="...">Rendezvényeim</a></li>
                 <li><a href="...">Fotósok</a></li>
                 <li><a href="...">Videósok</a></li>
                 <li><a href="...">Naptár</a></li>
-                <li><a href="...">Egyéb...</a></li>
-                </ul>
+            </ul>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
             <img id="user" src="Usericon.svg"></img>
         </div>
         <div class="userName">
-            <label>[Név]</label>
+            <label id="username">[Név]</label>
         </div>
 
         <!--Rendezvény bejelentés űrlap + gomb-->
@@ -57,19 +57,19 @@
                     <input type="email" placeholder="e-mail">
                 </div>
                 <select>
-                    <option value="">Fotósok száma</option>
+                    <option value="">Fotósok száma</option> <!--Ne lehessen kiválasztani?-->
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select><br>
                 <div>
-                    <input type="text" placeholder="Fotós 1">
+                    <input id="fotos1" type="text" placeholder="Fotós 1"> <!--Neveket beírja a felhasználó, fotósok oldalról tájékozódik-->
                 </div>
                 <div>
-                    <input type="text" placeholder="Fotós 2">
+                    <input id="fotos2" type="text" placeholder="Fotós 2">
                 </div>
                 <div>
-                    <input type="text" placeholder="Fotós 3">
+                    <input id="fotos3" type="text" placeholder="Fotós 3">
                 </div>
                 <select>
                     <option value="">Videósok száma</option>
@@ -77,10 +77,16 @@
                     <option>1</option>
                     <option>2</option>
                 </select><br>
+                <div>
+                    <input id="videos1" type="text" placeholder="Videós 2">
+                </div>
+                <div>
+                    <input id="videos2" type="text" placeholder="Videós 3">
+                </div>
             </form>
         </div>
         <div class="bejelBut">
-            <button type="button"> Beküldés </button>
+            <button id="bejelBut" type="button"> Beküldés </button>
         </div>
     </div>
 
