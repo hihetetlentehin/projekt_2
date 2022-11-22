@@ -2,10 +2,10 @@
 -- version 5.2.0
 -- https://www.phpmyadmin.net/
 --
--- Gép: 127.0.0.1
--- Létrehozás ideje: 2022. Nov 22. 11:32
--- Kiszolgáló verziója: 10.4.24-MariaDB
--- PHP verzió: 8.1.6
+-- Host: 127.0.0.1
+-- Generation Time: Nov 22, 2022 at 12:09 PM
+-- Server version: 10.4.24-MariaDB
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Adatbázis: `helixfoglalo`
+-- Database: `helixfoglalo`
 --
 
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `fotos`
+-- Table structure for table `fotos`
 --
 
 CREATE TABLE `fotos` (
@@ -39,7 +39,7 @@ CREATE TABLE `fotos` (
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `rendezveny`
+-- Table structure for table `rendezveny`
 --
 
 CREATE TABLE `rendezveny` (
@@ -48,11 +48,11 @@ CREATE TABLE `rendezveny` (
   `helyszin` varchar(1000) NOT NULL,
   `date_start` datetime NOT NULL,
   `date_end` datetime NOT NULL,
-  `fotos_1` int(11) NOT NULL,
-  `fotos_2` int(11) DEFAULT NULL,
-  `fotos_3` int(11) DEFAULT NULL,
-  `videos_1` int(11) DEFAULT NULL,
-  `videos_2` int(11) DEFAULT NULL,
+  `fotos_1` int(10) UNSIGNED NOT NULL,
+  `fotos_2` int(10) UNSIGNED DEFAULT NULL,
+  `fotos_3` int(10) UNSIGNED DEFAULT NULL,
+  `videos_1` int(10) UNSIGNED DEFAULT NULL,
+  `videos_2` int(10) UNSIGNED DEFAULT NULL,
   `megrendelo_NK` char(6) NOT NULL,
   `status` varchar(50) NOT NULL,
   `comment` varchar(1000) NOT NULL
@@ -61,11 +61,10 @@ CREATE TABLE `rendezveny` (
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
-  `U_id` int(10) UNSIGNED NOT NULL,
   `NK` varchar(6) NOT NULL,
   `U_password` varchar(255) NOT NULL,
   `U_vnev` varchar(50) NOT NULL,
@@ -79,7 +78,7 @@ CREATE TABLE `user` (
 -- --------------------------------------------------------
 
 --
--- Tábla szerkezet ehhez a táblához `videos`
+-- Table structure for table `videos`
 --
 
 CREATE TABLE `videos` (
@@ -92,60 +91,75 @@ CREATE TABLE `videos` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Indexek a kiírt táblákhoz
+-- Indexes for dumped tables
 --
 
 --
--- A tábla indexei `fotos`
+-- Indexes for table `fotos`
 --
 ALTER TABLE `fotos`
   ADD PRIMARY KEY (`F_id`);
 
 --
--- A tábla indexei `rendezveny`
+-- Indexes for table `rendezveny`
 --
 ALTER TABLE `rendezveny`
-  ADD PRIMARY KEY (`r_id`);
+  ADD PRIMARY KEY (`r_id`),
+  ADD KEY `fotos` (`fotos_1`),
+  ADD KEY `fotos2` (`fotos_2`),
+  ADD KEY `fotos3` (`fotos_3`),
+  ADD KEY `videos` (`videos_1`),
+  ADD KEY `videos2` (`videos_2`),
+  ADD KEY `user` (`megrendelo_NK`);
 
 --
--- A tábla indexei `user`
+-- Indexes for table `user`
 --
 ALTER TABLE `user`
-  ADD PRIMARY KEY (`U_id`);
+  ADD PRIMARY KEY (`NK`);
 
 --
--- A tábla indexei `videos`
+-- Indexes for table `videos`
 --
 ALTER TABLE `videos`
   ADD PRIMARY KEY (`V_id`);
 
 --
--- A kiírt táblák AUTO_INCREMENT értéke
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT a táblához `fotos`
+-- AUTO_INCREMENT for table `fotos`
 --
 ALTER TABLE `fotos`
   MODIFY `F_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT a táblához `rendezveny`
+-- AUTO_INCREMENT for table `rendezveny`
 --
 ALTER TABLE `rendezveny`
   MODIFY `r_id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT a táblához `user`
---
-ALTER TABLE `user`
-  MODIFY `U_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
-
---
--- AUTO_INCREMENT a táblához `videos`
+-- AUTO_INCREMENT for table `videos`
 --
 ALTER TABLE `videos`
   MODIFY `V_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `rendezveny`
+--
+ALTER TABLE `rendezveny`
+  ADD CONSTRAINT `fotos` FOREIGN KEY (`fotos_1`) REFERENCES `fotos` (`F_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fotos2` FOREIGN KEY (`fotos_2`) REFERENCES `fotos` (`F_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `fotos3` FOREIGN KEY (`fotos_3`) REFERENCES `fotos` (`F_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `user` FOREIGN KEY (`megrendelo_NK`) REFERENCES `user` (`NK`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `videos` FOREIGN KEY (`videos_1`) REFERENCES `videos` (`V_id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `videos2` FOREIGN KEY (`videos_2`) REFERENCES `videos` (`V_id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
