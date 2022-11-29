@@ -10,86 +10,77 @@
 </head>
 
 <body>
+<div class="wrapper">
     <!--Helix img + Navigacios bar-->
-    <div class="wrapper">
-        <img id="nav_img" src="C:\Users\User\Desktop\Projekt 2\pics\helixfelirat500.png"></img> <!--forrást átírni!-->
+    <div class="wrapper1">
+        
+        <img id="nav_img" src="C:\Users\User\Desktop\7.félév\Projektmunka 2\Projekt 2\pics\helixfelirat500.png"></img> <!--forrást átírni!-->
+        
         <div class="navbar">
-            <ul>
-                <li><a href="...">Kezdőlap</a></li>
-                <li><a href="...">Rendezvény bejelentés</a></li>
-                <li><a href="...">Rendezvényeim</a></li>
-                <li><a href="...">Fotósok</a></li>
-                <li><a href="...">Videósok</a></li>
-                <li><a href="...">Naptár</a></li>
-            </ul>
+                <a href="...">Kezdőlap</a>
+                <a href="...">Rendezvény bejelentés</a>
+                <a href="...">Rendezvényeim</a>
+                <a href="...">Fotósok</a>
+                <a href="...">Videósok</a>
+                <a href="...">Naptár</a>
         </div>
     </div>
 
     <div class="wrapper2">
         <!--User img + usernév jobb felső sarokban-->
         <div class="userIcon">
-            <img id="user" src="Usericon.svg"></img>
+            <!--src-t atirni!!!-->
+            <img id="user" src="C:\Users\User\Desktop\7.félév\Projektmunka 2\Projekt 2\pics\usericon.png"></img>
         </div>
         <div class="userName">
-            <label id="username">[Név]</label>
+            <label id="username">[Username]</label>
         </div>
 
         <!--Rendezvény bejelentés űrlap + gomb-->
         <div class="content">
-            <h1> Rendezvény bejelentése (legyen szöveg?) </h1><br>
-            <form class="data">
-                <div>
-                 <input type="text" placeholder="Rendezvény neve">
-                </div>
-                <div>
-                 <input type="datetime" placeholder="Időpont">
-                </div>
-                <div>
-                    <input type="text" placeholder="Helyszín">
-                </div>
-                <div>
-                    <input type="text" placeholder="Szakbizottság/Szervező">
-                </div>
-                <div>
-                    <input type="tel" placeholder="Telefonszám">
-                </div>
-                <div>
-                    <input type="email" placeholder="e-mail">
-                </div>
-                <select>
-                    <option value="">Fotósok száma</option> <!--Ne lehessen kiválasztani?-->
+            <h1> Rendezvény bejelentés</h1><br>
+            <form class="bejelForm">
+                 <label>Rendezvény neve:</label><br>
+                 <input type="text"><br>
+                 <label>Helyszín:</label><br>
+                 <input type="text" ><br>
+                 <label>Dátum:</label><br>
+                 <input type="date" ><br>
+                 <label>Időpont:</label><br>
+                 <input type="time"><br>
+                 <label>Szervező szakbizottság:</label><br>
+                 <input type="text"><br>
+                 <label>Telefonszám:</label><br>
+                 <input type="tel" placeholder="+36 30 356 2674"><br>
+                 <label>E-mail:</label><br>
+                 <input type="email"><br>
+                 <label>Fotósok száma:</label><br>
+                 <select> 
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
-                </select><br>
-                <div>
-                    <input id="fotos1" type="text" placeholder="Fotós 1"> <!--Neveket beírja a felhasználó, fotósok oldalról tájékozódik-->
-                </div>
-                <div>
-                    <input id="fotos2" type="text" placeholder="Fotós 2">
-                </div>
-                <div>
-                    <input id="fotos3" type="text" placeholder="Fotós 3">
-                </div>
-                <select>
-                    <option value="">Videósok száma</option>
+                 </select><br>
+                 <label>Fotós kiválasztása:</label><br>
+                 <!--Neveket beírja a felhasználó, fotósok oldalról tájékozódik-->
+                 <input id="fotos1" type="text" placeholder="Fotós 1"><br>
+                 <input id="fotos2" type="text" placeholder="Fotós 2"><br>
+                 <input id="fotos3" type="text" placeholder="Fotós 3"><br>
+                 <label>Videósok száma:</label><br>
+                 <select>
                     <option>Nem igénylek</option>
                     <option>1</option>
                     <option>2</option>
-                </select><br>
-                <div>
-                    <input id="videos1" type="text" placeholder="Videós 2">
-                </div>
-                <div>
-                    <input id="videos2" type="text" placeholder="Videós 3">
-                </div>
+                 </select><br>
+                 <label>Videós kiválasztása:</label><br>
+                 <input id="videos1" type="text" placeholder="Videós 2"><br>
+                 <input id="videos2" type="text" placeholder="Videós 3"><br>
             </form>
         </div>
         <div class="bejelBut">
             <button id="bejelBut" type="button"> Beküldés </button>
         </div>
     </div>
-
+</div>
 </body>
-
 </html>
+
