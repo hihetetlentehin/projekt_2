@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,400;0,700;1,200&display=swap'); 
+
+/* User rendezveny bejelentes */
+
+*{
+    list-style: none; /*lista elejen nincs jel*/
+    font-family: 'montserrat';  
+}
+
+/*hatterszin*/
+body{
+    background-image: linear-gradient(to left bottom, #262626, #3a3a41, #4d505f, #5e677e, #6d809f, #708bae,
+     #7396be, #74a1cd, #6b9fce, #629ecf, #579ccf, #4a9bd0);
+    background-attachment: fixed;
+    margin: 0px;
+    position:static;
+    overflow-y: scroll;
+    overflow-x: scroll;
+}
+
+
+/*------------------------------NAVBAR---------------------------------*/
+
+/*bal oldali navbar resz*/
+.wrapper {
+ position:absolute;
+ top: 0px;
+ left: 0px;
+ display: block;
+}
+
+/*Navbar feletti helix logo*/
+.wrapper img{
+    position:relative;
+    top:0px;
+    left:0px;
+    width:210px; 
+    height: auto;   
+}
+
+/*navbar*/
+.wrapper .navbar{
+    position:relative;
+    margin-right: 0px;
+    margin-top:-4px ;
+    width: 210px;
+    height:150vh;
+    background: #ffffff;
+    padding-top: 20px;
+}
+
+/*Linkek (elemek) a navbarban */
+.wrapper .navbar a{
+    color: rgb(49, 66, 103);
+    display: block;
+    text-decoration: none;  
+    padding-left:10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 10px;
+}
+
+/*Navbar elemek szine ha eger van felette*/
+.wrapper .navbar a:hover{
+   background: #eff0f0; 
+}
+
+/*Navbar elem szovegszine ha eger van felette*/
+.wrapper .navbar ul li:hover a{
+    color: rgb(49, 66, 103);
+}
+
+/*---------------------------------USER-ICON--------------------------------------*/
+
+/*Navbartol jobbra levo reszek*/
+.wrapper2{
+    width:100vw-210px;
+    margin-left: 210px;
+    position:static;
+}
+
+/*user profil ikon jobb felso sarokban*/
+.wrapper2 .userIcon img{
+    position:absolute;
+    top: 10px;
+    right: 120px;
+    width: 20px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/*Usernev jobb felso sarokban*/
+.wrapper2 .userName label{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+}
+
+/*content*/
+
+.wrapper2 .content{
+    display:block;
+    position:relative;
+    padding-left: 100px; 
+}
+
+.wrapper2 .content h1{
+    position: relative;
+    margin-top: 30px;
+    margin-right: 180px; 
+    text-align: center;
+    font-size: 32px;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+div.list {
+    margin-top: 70px;
+    margin-left: 120px;
+    margin-right: 100px; 
+ }
+
+
+div.ulist{
+  display: inline-block;
+  width: 40%;
+}
+div.ulist li{
+    height: 35px;
+   padding-bottom: 20px;
+    cursor: pointer;
+   
+}
+
+div.ulist a {
+    color: rgb(49, 66, 103);
+    text-decoration: none;
+    font-size: 20px;
+} 
+
+div.ulist a:hover{
+    background: #7674f9;
+}
+
+
+
+
+/*Gombcsoport*/
+.buttons {
+    position: fixed;
+    color: black;
+    float: left; /* Float the buttons side by side */
+    margin-left: 430px;
+    margin-top: 20px;
+}
+.action_btn{
+    cursor: pointer;
+}
+
+  
+.buttons:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.action_btn:hover {
+    background-color: #5e677e;
+}
