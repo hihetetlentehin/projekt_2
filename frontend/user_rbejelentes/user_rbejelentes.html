@@ -35,49 +35,82 @@
         <div class="userName">
             <label id="username">[Username]</label>
         </div>
-
-        <!--Rendezvény bejelentés űrlap + gomb-->
-        <div class="content">
-            <h1> Rendezvény bejelentés</h1><br>
-            <form class="bejelForm">
-                 <label>Rendezvény neve:</label><br>
-                 <input type="text"><br>
-                 <label>Helyszín:</label><br>
-                 <input type="text" ><br>
-                 <label>Dátum:</label><br>
-                 <input type="date" ><br>
-                 <label>Időpont:</label><br>
-                 <input type="time"><br>
-                 <label>Szervező szakbizottság:</label><br>
-                 <input type="text"><br>
-                 <label>Telefonszám:</label><br>
-                 <input type="tel" placeholder="+36 30 356 2674"><br>
-                 <label>E-mail:</label><br>
-                 <input type="email"><br>
-                 <label>Fotósok száma:</label><br>
-                 <select> 
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                 </select><br>
-                 <label>Fotós kiválasztása:</label><br>
-                 <!--Neveket beírja a felhasználó, fotósok oldalról tájékozódik-->
-                 <input id="fotos1" type="text" placeholder="Fotós 1"><br>
-                 <input id="fotos2" type="text" placeholder="Fotós 2"><br>
-                 <input id="fotos3" type="text" placeholder="Fotós 3"><br>
-                 <label>Videósok száma:</label><br>
-                 <select>
-                    <option>Nem igénylek</option>
-                    <option>1</option>
-                    <option>2</option>
-                 </select><br>
-                 <label>Videós kiválasztása:</label><br>
-                 <input id="videos1" type="text" placeholder="Videós 2"><br>
-                 <input id="videos2" type="text" placeholder="Videós 3"><br>
-            </form>
-        </div>
-        <div class="bejelBut">
-            <button id="bejelBut" type="button"> Beküldés </button>
+        <!-- Heni része-->
+        <div class="container">
+            <div class="row col-md-6 col-md-offset-3">
+              <div class="panel panel-primary">
+                <div class="panel-heading text-center">
+                  <h1>Rendezvény létrehozása</h1>
+                </div>
+                <div class="panel-body">
+                  <form action="connect2.php" method="post">
+                    <div class="form-group">
+                      <label for="r_nev">Rendezvény neve</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="r_nev"
+                        name="r_nev"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="helyszin">Rendezvény helyszíne</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="helyszin"
+                        name="helyszin"
+                      />
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="date_start">Rendezvény kezdete</label>
+                      <input
+                        type="datetime"
+                        class="form-control"
+                        id="date_start"
+                        name="date_start"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="date_end">Rendezvény vége</label>
+                      <input
+                        type="datetime"
+                        class="form-control"
+                        id="date_end"
+                        name="date_end"
+                      />
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="megrendelo_NK">Megrendelő kar</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="megrendelo_NK"
+                        name="megrendelo_NK"
+                      />
+                    </div>
+      
+                    <div class="form-group">
+                      <label for="comment">Megjegyzés</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="comment"
+                        name="comment"
+                      />
+                    </div>
+      
+                    <input type="submit" class="btn btn-primary" />
+                  </form>
+                </div>
+                <div class="panel-footer text-right">
+                  <small>&copy; Technical Nagy-Kasza Henrietta</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 </div>
