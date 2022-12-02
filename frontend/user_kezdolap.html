@@ -3,47 +3,56 @@
 
 <head>
   <title>Kezdőlap</title>
-  <link rel="icon" type="image/x-icon" href="\pics\favicon.ico">
+  <link rel="icon" type="image/x-icon" href="..\pics\favicon.ico" alt="logo">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style1.css" rel="stylesheet" type="text/css" /> <!--forrást átírni-->
+  <link href="..\style\user_kezdolap.css" rel="stylesheet" type="text/css" /> <!--forrást átírni-->
 </head>
 
 <body>
     <!--Helix img + Navigacios bar-->
     <div class="wrapper">
-        <img id="nav_img" src="\pics\helixfelirat500.png"></img>
-        <div class="navbar">
-            <ul>
-                <li><a href="...">Kezdőlap</a></li>
-                <li><a href="...">Rendezvény bejelentés</a></li>
-                <li><a href="...">Rendezvényeim</a></li>
-                <li><a href="...">Fotósok</a></li>
-                <li><a href="...">Videósok</a></li>
-                <li><a href="...">Naptár</a></li>
+
+        <div class="wrapper1">
+            <img id="nav_img" src="..\pics\helixfelirat500.png" alt="helixlogo_navbar"></img>
+            <div class="navbar">
+                <ul>
+                    <li><a href="...">Kezdőlap</a></li>
+                    <li><a href="...">Rendezvény bejelentés</a></li>
+                    <li><a href="...">Rendezvényeim</a></li>
+                    <li><a href="...">Fotósok</a></li>
+                    <li><a href="...">Videósok</a></li>
                 </ul>
+          </div>
         </div>
-    </div>
 
-    <div class="wrapper2">
+        <div class="wrapper2">
         <!--User img + usernév jobb felső sarokban-->
-        <div class="userIcon">
-            <img id="user" src="Usericon.svg"></img>
-        </div>
-        <div class="userName">
-            <label id="username">[Név]</label>
-        </div>
+            <div class="userIcon">
+                <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
+            </div>
 
+            <div class="userName">
+                <label id="username">[Username]</label><br>
+                <label id="logout">[Kijelentkezés]</label><br>
+            </div>
     
-        <div class="content">
-            <form class="data">
-                <!--Profilkép-->
-                
-                <h1> Üdvözlünk a Helix Rendezvény szervező iroda oldalán!</h1><br>
-                <p>
-                    Infók jöhetnek ide a usernek... akár listaszerűen...
-                </p>
-            </form>
+            <div class="content">
+                <form class="data">
+        
+                    <h1> Üdvözlünk a Helix Rendezvény szervező iroda oldalán!</h1><br>
+                    <p>
+                        Szöveg???
+                    </p>
+                    <p>
+                        Admin elérhetőségei<br>
+                        <label>Név:</label><br>
+                        <label>Telefonszám:</label><br>
+                        <label>E-mail:</label><br>
+                    </p>
+    
+                </form>
+            </div>
     </div>
 </body>
 </html>
