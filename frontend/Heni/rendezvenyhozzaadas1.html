@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rendezvény felvétele</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <meta charset="utf8" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row col-md-6 col-md-offset-3">
+        <div class="panel panel-primary">
+          <div class="panel-heading text-center">
+            <h1>Fotós/Videós hozzáadása</h1>
+          </div>
+          <div class="panel-body">
+            <form action="connect.php" method="post">
+              <div class="form-group">
+                <label for="fusername">Felhasználónév</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fusername"
+                  name="fusername"
+                />
+              </div>
+              <div class="form-group">
+                <label for="fpassword">Jelszó</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="fpassword"
+                  name="fpassword"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="fvnev">Vezetéknév</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="fvnev"
+                  name="fvnev"
+                />
+              </div>
+              <div class="form-group">
+                <label for="fknev">Keresztnév</label>
+                <input
+                  type="fknev"
+                  class="form-control"
+                  id="fknev"
+                  name="fknev"
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="picture">Kép</label>
+                <input
+                  type="picture"
+                  class="form-control"
+                  id="picture"
+                  name="picture"
+                />
+              </div>
+
+              <input type="submit" class="btn btn-primary" />
+            </form>
+          </div>
+          <div class="panel-footer text-right">
+            <small>&copy; Technical Nagy-Kasza Henrietta</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
