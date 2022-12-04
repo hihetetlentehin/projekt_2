@@ -116,44 +116,38 @@ body{
     font-weight: bold;
 }
 
-div.list {
-    margin-top: 70px;
-    margin-left: 120px;
-    margin-right: 100px; 
- }
-
-
-div.ulist{
-  display: inline-block;
-  width: 40%;
+.table {
+    border: solid 1px hsl(0, 0%, 0%);
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 20px Arial, sans-serif;
+  margin-left: 300px;
+  margin-top:50px
 }
-div.ulist li{
-    height: 35px;
-   padding-bottom: 20px;
-    cursor: pointer;
-   
+.table thead th {
+    background-color: black;
+    border: solid 1px #a1a7a7;
+    color: #899696;
+    padding: 10px;
+    text-align: center;
+    text-size-adjust: 22px;
 }
-
-div.ulist a {
-    color: rgb(49, 66, 103);
-    text-decoration: none;
-    font-size: 20px;
-} 
-
-div.ulist a:hover{
-    background: #7674f9;
+.table tbody td {
+    background-color:#DDEEEE;
+    border-bottom: solid 1px #7c7c7c;
+    color: rgb(53, 56, 58);
+    padding: 10px;
+    text-align: center;
+    text-size-adjust: 20px;
 }
-
-
-
 
 /*Gombcsoport*/
 .buttons {
-    position: fixed;
+    position: relative;
     color: black;
     float: left; /* Float the buttons side by side */
-    margin-left: 430px;
-    margin-top: 20px;
+    margin-left: 730px;
+    margin-top:70px;
 }
 .action_btn{
     cursor: pointer;

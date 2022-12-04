@@ -122,64 +122,53 @@ body{
     padding-bottom: 5px;
 }
 
-.buttons {
-    color: black;
-    float: left; /* Float the buttons side by side */
-    margin-left: 700px;
-    margin-top: 500px;
+.table {
+    border: solid 1px hsl(0, 0%, 0%);
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 20px Arial, sans-serif;
+    margin-left: 290px;
+    margin-top:50px
 }
-.action_btn{
+.table thead th {
+    background-color: black;
+    border: solid 1px #a1a7a7;
+    color: #899696;
+    padding: 10px;
+    text-align: center;
+    text-size-adjust: 22px;
+}
+.table tbody td {
+    background-color:#DDEEEE;
+    border-bottom: solid 1px #424242;
+    color: rgb(53, 56, 58);
+    padding: 10px;
+    text-align: center;
+    text-size-adjust: 20px;
+}
+
+.btn-group{
+        position:absolute;
+        margin-left: 720px;
+        margin-top: 20px;
+       
+        font-family:'montserrat';
+        border:darkgrey;
+        background-color: white;
+        border-radius: 4px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+}
+
+.btn-group button{
     cursor: pointer;
 }
-
-.buttons:not(:last-child) {
-    border-right: none; /* Prevent double borders */
-  
+.btn-group{
+    background-color: #6d809f;
 }
 
-.buttons:after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-.buttons:hover {
+.btn-group :hover {
     background-color: #5e677e;
-}
-
-.table {
-    table-layout: fixed;
-    margin-left: 280px;
-    margin-right: 180px;
-    margin-bottom: 10px;
-    color: #212529;
-    position:absolute;
-    margin-top: 50px;
-    
-  }
-  
-  .table th,
-  .table td {
-    padding: 0.75rem;
-    vertical-align: text-bottom;
-    border-top: 1px solid #dee2e6;
-  }
-  
-  .table thead th {
-    vertical-align: bottom;
-    border-bottom: 2px solid #dee2e6;
-  }
-  
-  .table-bordered {
-    border: 1px solid #dee2e6;
-  }
-  
-  .table-bordered th,
-  .table-bordered td {
-    border: 1px solid #dee2e6;
-  }
-  
-  .table-bordered thead th,
-  .table-bordered thead td {
-    border-bottom-width: 2px;
 }

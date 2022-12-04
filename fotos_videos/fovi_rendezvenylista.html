@@ -1,74 +1,69 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-    <title>Rendezvények listanézet</title>
-    <link rel="icon" type="image/x-icon" href="...\favicon.ico">  <!--forrást átírni!-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="lista.css" rel="stylesheet" type="text/css" />
-</head>
+    <head>
+        <title>Rendezvények</title>
+        <link rel="icon" type="image/x-icon" href="..\pics\favicon.ico" alt="logo">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style\fovi_rendezvenylista.css" rel="stylesheet" type="text/css" /> 
+    </head>
 
 <body>
-        <div class="wrapper">
-            <img id="helix" src="...\helixfelirat500.png"></img>
+    <!--Helix img + Navigacios bar-->
+    <div class="wrapper">
+        <div class="wrapper1">
+            <img id="nav_img" src="..\pics\helixfelirat500.png" alt="helixlogo_navbar"></img>
             <div class="navbar">
-                <ul>
-                    <li><a href="...">Kezdőlap</a></li>
-                    <li><a href="...">Profilom</a></li>
-                    <li><a href="...">Rendezvények</a></li>
-                    <li><a href="...">Elvállalt rendezvények</a></li>
-                    <li><a href="...">Naptár</a></li>
-                    </ul>
+                <a href="...">Kezdőlap</a>
+                <a href="...">Profilom</a>
+                <a href="...">Rendezvények</a>
+                <a href="...">Elvállalt rendezvények</a>
             </div>
         </div>
     
-    <div class="wrapper2">
+        <div class="wrapper2">
             <!--User img + usernév jobb felső sarokban-->
-         <div class="userIcon">
-                <img id="user" src="Usericon.svg"></img>
+            <div class="userIcon">
+                <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
             </div>
-        <div class="userName">
-                <label>[Név]</label>
-            </div>    
-     <div class="content">
-      <h1> Rendezvények</h1><br>
-         </div>
-         </div>
+
+            <div class="userName">
+                <label id="username">[Username]</label><br>
+                <label id="logout">Kijelentkezés</label><br>
+            </div>   
+            
+            <div class="content">
+            <h1> Rendezvények</h1><br>
         
-         <table id="tabla" class="table" style="width:70%">
-            <thead>
-                <tr>
-                    <th>Rendezvény neve</th>
-                    <th>Időpont</th>
-                    <th>Státusz</th>
-                </tr>
-               </thead>
+            <table id="tabla" class="table" style="width:70%">
+                <thead>
+                    <tr>
+                        <th>Rendezvény neve</th>
+                        <th>Időpont</th>
+                        <th>Státusz</th>
+                    </tr>
+                </thead>
                 <tbody>
-                <tr href="">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                
-                </tr>
-                <tr href="">
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                </tr>
-                
+                    <tr href="">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr href="">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
                 </tbody>
-          </table>
-  <div class="buttons">
-
-    <div class="action_btn">
-
-    <button name="prev" class="action_btn prev" type="submit" value="Prev" onclick="myFunction()">Előző oldal</button>
-    <button name="next" class="action_btn next" type="submit" value="Next" onclick="myFunction2()">Következő oldal</button>
-
-    </div>
-
-</div>
-
+            </table>
+            <div class="buttons">
+                <div class="action_btn">
+                    <button name="prev" class="action_btn prev" type="submit" value="Prev" onclick="myFunction()">Előző oldal</button>
+                    <button name="next" class="action_btn next" type="submit" value="Next" onclick="myFunction2()">Következő oldal</button>
+                </div>
+            </div>    
+        </div>
+    </div>    
 </body>
 </html>
