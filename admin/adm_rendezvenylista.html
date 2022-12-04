@@ -2,82 +2,72 @@
 <html>
 
 <head>
-    <title>Rendezvények listanézet</title>
-    <link rel="icon" type="image/x-icon" href="...\favicon.ico">  <!--forrást átírni!-->
+    <title>Rendezvények</title>
+    <link rel="icon" type="image/x-icon" href="../pics/favicon.ico" alt="logo">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="lista.css" rel="stylesheet" type="text/css" />
+    <link href="../style/adm_rendezvenylista.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-        <div class="wrapper">
-            <img id="helix" src="...\helixfelirat500.png"></img>
+    <div class="wrapper">  
+        <!--Helix img + Navigacios bar-->
+        <div class="wrapper1">
+
+            <img id="nav_img" src="../pics/helixfelirat500.png" alt="helixlogo_navbar"></img>
+        
             <div class="navbar">
-                <ul>
-                    <li><a href="...">Kezdőlap</a></li>
-                    <li><a href="...">Rendezvények</a></li>
-                    <li><a href="...">Rendezvény infók?</a></li>
-                    <li><a href="...">Fotósok listája</a></li>
-                    <li><a href="...">Videósok listája</a></li>
-                    <li><a href="...">Új profil feltöltés</a></li>
-                    <li><a href="...">Statisztika</a></li>
-                    <li><a href="...">Egyéb?</a></li>
-                    </ul>
+                <a href="...">Kezdőlap</a>
+                <a href="...">Rendezvények</a>
+                <a href="...">Fotósok</a>
+                <a href="...">Fotós hozzáadás</a>
+                <a href="...">Videósok</a>
+                <a href="...">Videós hozzáadás</a>
+                <a href="...">Statisztikák</a>
             </div>
         </div>
     
-    <div class="wrapper2">
+        <div class="wrapper2">
             <!--User img + usernév jobb felső sarokban-->
-         <div class="userIcon">
-                <img id="user" src="Usericon.svg"></img>
+            <div class="userIcon">
+                <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
             </div>
-        <div class="userName">
-                <label>[Név]</label>
-            </div>    
-     <div class="content">
-         <h1> Jövőbeli rendezvények</h1><br>
-         
-    <!-- <div id="list">  
-        <ul> 
-            <li>Rendezvény1</li><br>
-            <li>Rendezvény2</li><br>
-            <li>Rendezvény3</li><br>
-        </ul>
-        <ul> 
-            <li>Rendezvény4</li><br>
-            <li>Rendezvény5</li><br>
-            <li>Rendezvény6</li><br>
-        </ul>
-  </div>-->
-      <table id="tabla" class="table table-striped table-bordered" style="width:80%">
-     <thead>
-        <tr>
-            <th>Rendezvény neve</th>
-            <th>Időpont</th>
-            <th>Szak</th>
-        </tr>
-       </thead>
-        <tbody>
-        <tr href="">
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr href="">
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-       
-        <!--további elemek-->
- 
-    
-  </div>
-  <div class="btn-group">
-    <button>Előző oldal</button>
-    <button>Következő oldal</button>
-  </div> 
-</div>
+            
+            <div class="userName">
+                <label id="username">Admin</label><br>
+                <label id="logout">Kijelentkezés</label><br>
+            </div>
 
+            <!--Rendezvények listában-->
+            <div class="content">
+                <h1>Rendezvények</h1><br>
+                <table id="tabla" class="table table-striped table-bordered" style="width:80%">
+                    <thead>
+                        <tr>
+                            <th>Rendezvény neve</th>
+                            <th>Időpont</th>
+                            <th>Szak</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr href="">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr href="">
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>    
+            </div>
+            <div class="btn-group">
+                <button>Előző oldal</button>
+                <button>Következő oldal</button>
+            </div> 
+        </div>
+    </div>
 </body>
 </html>
