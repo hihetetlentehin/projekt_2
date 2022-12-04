@@ -2,102 +2,86 @@
 <html>
 
 <head>
-    <title>Admin rendezvények</title>
-    <link rel="icon" type="image/x-icon" href="...pics\favicon.ico">  /*forrást átírni*/
+    <title>Rendezvények</title>
+    <link rel="icon" type="image/x-icon" href="../pics/favicon.ico" alt="logo">
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-   <link href="arendezveny.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/adm_fotosok.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-
-    <div class="wrapper">
-        <img id="helix" src="...pics\helixfelirat500.png"></img>  /*forras*/
-        <div class="navbar">
-          <ul>
-                <li><a href="...">Kezdőlap</a></li>
-                <li><a href="...">Rendezvények</a></li>
-                <li><a href="...">Rendezvény infók?</a></li>
-                <li><a href="...">Fotósok listája</a></li>
-                <li><a href="...">Videósok listája</a></li>
-                <li><a href="...">Új profil feltöltés</a></li>
-                <li><a href="...">Statisztika</a></li>
-                <li><a href="...">Egyéb?</a></li>
-            </ul>
-        </div>
+  <div class="wrapper">  
+      <!--Helix img + Navigacios bar-->
+    <div class="wrapper1">
+  
+      <img id="nav_img" src="../pics/helixfelirat500.png" alt="helixlogo_navbar"></img>
+          
+      <div class="navbar">
+        <a href="...">Kezdőlap</a>
+        <a href="...">Rendezvények</a>
+        <a href="...">Fotósok</a>
+        <a href="...">Fotós hozzáadás</a>
+        <a href="...">Videósok</a>
+        <a href="...">Videós hozzáadás</a>
+        <a href="...">Statisztikák</a>
+      </div>
     </div>
+  
 
     <div class="wrapper2">
         <!--User img + usernév jobb felső sarokban-->
         <div class="userIcon">
-            <img id="user" src="Usericon.svg"></img>
+          <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
         </div>
         <div class="userName">
-            <label>[Név]</label>
-        </div>    
-    <div class="content">
-     <h1> Rendezvények adatai</h1><br>
-     <div class="data">
-      <div>
-        <label>Rendezvény neve</label><br>
-        <input type="text" placeholder="Rendezvény neve"><br>
+          <label id="username">Admin</label><br>
+          <label id="logout">Kijelentkezés</label><br>
+        </div>
+
+      <div class="content">
+        <h1> Rendezvény információk</h1><br>
+        <div class="data">
+          <label>Rendezvény neve:</label><br>
+          <input type="text"><br>
+          <label>Helyszín:</label><br>
+          <input type="text" ><br>
+          <label>Dátum:</label><br>
+          <input type="date" ><br>
+          <label>Időpont:</label><br>
+          <input type="time"><br>
+          <label>Szervező szakbizottság:</label><br>
+          <input type="text"><br>
+          <label>Telefonszám:</label><br>
+          <input type="tel" placeholder="+36 30 356 2674"><br>
+          <label>E-mail:</label><br>
+          <input type="email"><br>
+          <label>Fotósok száma:</label><br>
+          <select> 
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+          </select><br>
+          <label>Fotós:</label><br>
+          <input id="fotos1" type="text" placeholder="Fotós 1"><br>
+          <input id="fotos2" type="text" placeholder="Fotós 2"><br>
+          <input id="fotos3" type="text" placeholder="Fotós 3"><br>
+          <label>Videósok száma:</label><br>
+          <select>
+            <option>Nem igénylek</option>
+            <option>1</option>
+            <option>2</option>
+          </select><br>
+          <label>Videós kiválasztása:</label><br>
+          <input id="videos1" type="text" placeholder="Videós 2"><br>
+          <input id="videos2" type="text" placeholder="Videós 3"><br>
+          </div>
+        </div>
       </div>
-      <div>
-        <label>Rendezvény időpontja</label><br>
-        <input type="datetime" placeholder="Időpont"><br>
-      </div>
-      <div>
-        <label>Helyszín</label><br>
-        <input type="text" placeholder="Helyszín"><br>
-      </div>
-      <div>
-        <label>Szervező</label><br>
-        <input type="text" placeholder="Szakbizottság/Szervező"><br>
-      </div>
-      <div>
-        <label>Telefonszám</label><br>
-        <input type="tel" placeholder="Telefonszám"><br>
-      </div>
-      <div>
-        <label>E-mail cím</label><br>
-        <input type="email" placeholder="e-mail"><br>
-      </div>
-      <div>  
-        <label>Fotósok száma</label><br>
-        <input type="text"><br>
-      </div>
-      <div> 
-        <label>Fotós 1</label><br>
-        <input type="text" placeholder="Fotós 1" ><br>
-      </div>
-      <div> 
-        <label>Fotós 2</label><br>
-        <input type="text" placeholder="Fotós 2" ><br>
-      </div>
-      <div> 
-        <label>Fotós 3</label><br>
-        <input type="text" placeholder="Fotós 3" ><br>
-      </div>
-      <div> 
-        <label>Videóst igényel?</label><br>
-        <input type="text" ><br>
-      </div>
-      <div> 
-        <label>Videós 1</label><br>
-        <input type="text" placeholder="Videós 1" ><br>
-      </div>
-      <div>
-        <label>Add meg a drive linket</label><br>
-        <input type="url" placeholder="Link helye"><br>
-      </div>
-     </div>
-    </div>
 
     <div>
-    <br><button type="button">Módosítás</button><br>
-    </div>
-    </div>
-    
-  </body>
-    
-  </html>
+    <br><button id="modify" type="button">Módosítás</button><br>
+    <br><button id="delete" type="button">Törlés</button><br>
+  </div>
+</div>
+</body>
+</html>
