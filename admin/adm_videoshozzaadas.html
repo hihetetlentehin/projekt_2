@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Videós hozzáadás</title>
+    <link rel="icon" type="image/x-icon" href="../pics/favicon.ico" alt="logo">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../style/adm_fotosok.css" rel="stylesheet" type="text/css" />
+</head>
+
+  <body>
+    <div class="wrapper">
+     <!--Helix img + Navigacios bar-->
+      <div class="wrapper1">
+
+        <img id="nav_img" src="../pics/helixfelirat500.png" alt="helixlogo_navbar"></img>
+      
+        <div class="navbar">
+          <a href="...">Kezdőlap</a>
+          <a href="...">Rendezvények</a>
+          <a href="...">Fotósok</a>
+          <a href="...">Fotós hozzáadás</a>
+          <a href="...">Videósok</a>
+          <a href="...">Videós hozzáadás</a>
+          <a href="...">Statisztikák</a>
+        </div>
+      </div>
+
+      <div class="wrapper2">
+        <!--User img + usernév jobb felső sarokban-->
+        <div class="userIcon">
+          <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
+        </div>
+        <div class="userName">
+         <label id="username">Admin</label><br>
+         <label id="logout">Kijelentkezés</label><br>
+        </div>
+
+        <div class="content">
+          <div class="row col-md-6 col-md-offset-3">
+            <div class="panel panel-primary">
+              <div class="panel-heading text-center">
+                <h1>Videós hozzáadás</h1>
+              </div>
+              <div class="panel-body">
+                <form action="connect.php" method="post">
+              
+                  <div class="form-group">
+                    <label for="fusername">Felhasználónév:</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="fusername"
+                      name="fusername"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fpassword">Jelszó:</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="fpassword"
+                      name="fpassword"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                  <label for="fvnev">Vezetéknév:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="fvnev"
+                    name="fvnev"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fknev">Keresztnév:</label>
+                    <input
+                      type="fknev"
+                      class="form-control"
+                      id="fknev"
+                      name="fknev"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fszak">Szak:</label>
+                    <input
+                      type="fszak"
+                      class="form-control"
+                      id="fszak"
+                      name="fszak"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="ftel">Telefonszám:</label>
+                    <input
+                      type="tel"
+                      class="form-control"
+                      id="ftel"
+                      name="ftel"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="fmail">E-mail:</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="fmail"
+                      name="fmail"
+                    />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="picture">Videók feltöltése:</label>
+                    <input
+                      type="picture"
+                      class="form-control"
+                      id="picture"
+                      name="picture"
+                    />
+                  </div>
+
+                  <input type="submit" class="btn btn-primary" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
