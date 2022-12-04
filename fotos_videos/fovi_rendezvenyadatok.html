@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Rendezvény adatai</title>
+    <link rel="icon" type="image/x-icon" href="..\pics\favicon.ico" alt="logo">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style\fovi_rendezvenyek.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="wrapper1">
+      <img id="nav_img" src="..\pics\helixfelirat500.png" alt="helixlogo_navbar"></img>
+      <div class="navbar">
+        <a href="...">Kezdőlap</a>
+        <a href="...">Profilom</a>
+        <a href="...">Rendezvények</a>
+        <a href="...">Elvállalt rendezvények</a>
+      </div>
+    </div>
+ 
+
+    <div class="wrapper2">
+      <!--User img + usernév jobb felső sarokban-->
+      <div class="userIcon">
+        <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
+      </div>
+
+      <div class="userName">
+        <label id="username">[Username]</label><br>
+        <label id="logout">Kijelentkezés</label><br>
+      </div>  
+      
+      
+      <div class="content">
+      <h1> Rendezvény adatai</h1><br>
+      <div class="data">
+        <div>
+          <label>Rendezvény neve</label><br>
+          <input type="text" placeholder="Rendezvény neve" readonly><br>
+        </div>
+        <div>
+          <label>Rendezvény időpontja</label><br>
+          <input type="datetime" placeholder="Időpont" readonly><br>
+        </div>
+        <div>
+          <label>Helyszín</label><br>
+          <input type="text" placeholder="Helyszín" readonly><br>
+        </div>
+        <div>
+          <label>Szervező</label><br>
+          <input type="text" placeholder="Szakbizottság/Szervező" readonly><br>
+        </div>
+        <div>
+          <label>Telefonszám</label><br>
+          <input type="tel" placeholder="Telefonszám" readonly><br>
+        </div>
+        <div>
+          <label>E-mail cím</label><br>
+          <input type="email" placeholder="e-mail" readonly><br>
+        </div>
+        <div>  
+          <label>Fotósok száma</label><br>
+          <input type="text" readonly><br>
+        </div>
+        <div> 
+          <label>Fotós 1</label><br>
+          <input type="text" placeholder="Fotós 1" readonly><br>
+        </div>
+        <div> 
+          <label>Fotós 2</label><br>
+          <input type="text" placeholder="Fotós 2" readonly><br>
+        </div>
+        <div> 
+          <label>Fotós 3</label><br>
+          <input type="text" placeholder="Fotós 3" readonly><br>
+        </div>
+        <div>
+          <label>Drive link a rendezvényhez</label><br>
+        </div>
+      </div>
+    
+      <div>
+        <br><button type="button">Jelentkezés</button><br>
+      </div>
+
+    </div>
+  </div>
+</body>
