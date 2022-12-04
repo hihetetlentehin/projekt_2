@@ -2,50 +2,57 @@
 <html>
 
 <head>
-  <title>Fotósok</title>
-  <link rel="icon" type="image/x-icon" href="C:\Users\User\Desktop\Projekt 2\pics\favicon.ico">
+  <title>Fotós</title>
+  <link rel="icon" type="image/x-icon" href="..\pics\favicon.ico" alt="logo">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style1.css" rel="stylesheet" type="text/css" /> <!--forrást átírni-->
+  <link href="style\user_reszletesprofil.css" rel="stylesheet" type="text/css" /> 
 </head>
 
 <body>
     <!--Helix img + Navigacios bar-->
-    <div class="wrapper1">
-        <img id="nav_img" src="C:\Users\User\Desktop\Projekt 2\pics\helixfelirat500.png"></img>
-        <div class="navbar">
-            <a href="...">Kezdőlap</a>
-            <a href="...">Rendezvény bejelentés</a>
-            <a href="...">Rendezvényeim</a>
-            <a href="...">Fotósok</a>
-            <a href="...">Videósok</a>
-        </div>
-    </div>
+    <div class="wrapper">
 
-    <div class="wrapper2">
-        <!--User img + usernév jobb felső sarokban-->
-        <div class="userIcon">
-            <img id="user" src="Usericon.svg"></img>
-        </div>
-        <div class="userName">
-            <label id="username">[Név]</label>
+        <div class="wrapper1">
+            <img id="nav_img" src="..\pics\helixfelirat500.png" alt="helixlogo_navbar"></img>
+            <div class="navbar">
+                <a href="...">Kezdőlap</a>
+                <a href="...">Rendezvény bejelentés</a>
+                <a href="...">Rendezvényeim</a>
+                <a href="...">Fotósok</a>
+                <a href="...">Videósok</a>
+            </div>
         </div>
 
-        <!--Fotos profil megjelenitese-->
-        <div class="content">
-            <form class="data">
-                <!--Profilkép-->
-                <img src=""><br> <!--forrás megírása-->
-                <h1> Név </h1><br>
-                <label>Szak:</label><label></label><br>
-                <label>Telefonszám:</label><label></label><br>
-                <label>E-mail:</label><label></label><br>
+        <div class="wrapper2">
+            <!--User img + usernév jobb felső sarokban-->
+            <div class="userIcon">
+                <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
+            </div>
 
-                <label>Portfólió képek:</label><br>
-                <img src="">
-                <img src="">
-                <img src="">
-            </form>
-    </div>
+            <div class="userName">
+                <label id="username">[Username]</label><br>
+                <label id="logout">Kijelentkezés</label><br>
+            </div>
+
+            <!--Fotos profil megjelenitese-->
+            <div class="content">
+                <form class="data">
+                    <label>Név:</label>
+                    <label></label><br>
+                    <label>Szak:</label>
+                    <label></label><br>
+                    <label>Telefonszám:</label>
+                    <label></label><br>
+                    <label>E-mail:</label>
+                    <label></label><br>
+                    <label>Portfólió képek:</label><br>
+                    <img src="">
+                    <img src="">
+                    <img src="">
+                </form>
+            </div>
+        </div>
+    </div>        
 </body>
 </html>
