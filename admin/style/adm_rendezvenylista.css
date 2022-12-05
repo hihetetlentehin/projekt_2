@@ -90,9 +90,17 @@ body{
 }
 
 /*Usernev jobb felso sarokban*/
-.wrapper2 .userName label{
+.wrapper2 .userName #username{
     position: absolute;
     top: 10px;
+    right: 10px;
+    color: white;
+}
+
+/*Logout jobb felso sarokban*/
+.wrapper2 .userName #logout{
+    position: absolute;
+    top: 35px;
     right: 10px;
     color: white;
 }
