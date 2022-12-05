@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -18,12 +19,12 @@
       
         <div class="navbar">
           <a href="...">Kezdőlap</a>
-          <a href="...">Rendezvények</a>
-          <a href="...">Fotósok</a>
-          <a href="...">Fotós hozzáadás</a>
-          <a href="...">Videósok</a>
-          <a href="...">Videós hozzáadás</a>
-          <a href="...">Statisztikák</a>
+          <a href="adm_rendezvenylista.html">Rendezvények</a>
+          <a href="adm_fotosok.html">Fotósok</a>
+          <a href="adm_fotoshozzaadas.html">Fotós hozzáadás</a>
+          <a href="adm_fotosok.html">Videósok</a>
+          <a href="adm_fotoshozzaadas.html">Videós hozzáadás</a>
+          <a href="adm_stat.html">Statisztikák</a>
         </div>
       </div>
 
@@ -44,15 +45,15 @@
                 <h1>Fotós hozzáadás</h1>
               </div>
               <div class="panel-body">
-                <form action="connect.php" method="post">
+                <form action="connect.php" method="get">
               
                   <div class="form-group">
                     <label for="fusername">Felhasználónév:</label>
                     <input
                       type="text"
                       class="form-control"
-                      id="fusername"
-                      name="fusername"
+                      id="F_username"
+                      name="F_username"
                     />
                   </div>
 
@@ -61,72 +62,73 @@
                     <input
                       type="password"
                       class="form-control"
-                      id="fpassword"
-                      name="fpassword"
+                      id="F_password"
+                      name="F_password"
                     />
                   </div>
 
                   <div class="form-group">
-                  <label for="fvnev">Vezetéknév:</label>
+                  <label for="F_vnev">Vezetéknév:</label>
                   <input
                     type="text"
                     class="form-control"
-                    id="fvnev"
-                    name="fvnev"
+                    id="F_vnev"
+                    name="F_vnev"
                     />
                   </div>
 
                   <div class="form-group">
-                    <label for="fknev">Keresztnév:</label>
+                    <label for="F_knev">Keresztnév:</label>
                     <input
                       type="fknev"
                       class="form-control"
-                      id="fknev"
-                      name="fknev"
+                      id="F_knev"
+                      name="F_knev"
                     />
                   </div>
 
                   <div class="form-group">
-                    <label for="fszak">Szak:</label>
+                    <label for="F_szak">Szak:</label>
                     <input
                       type="fszak"
                       class="form-control"
-                      id="fszak"
-                      name="fszak"
+                      id="F_szak"
+                      name="F_szak"
                     />
                   </div>
 
                   <div class="form-group">
-                    <label for="ftel">Telefonszám:</label>
+                    <label for="F_tel">Telefonszám:</label>
                     <input
                       type="tel"
                       class="form-control"
-                      id="ftel"
-                      name="ftel"
+                      id="F_tel"
+                      name="F_tel"
                     />
                   </div>
 
                   <div class="form-group">
-                    <label for="fmail">E-mail:</label>
+                    <label for="F_mail">E-mail:</label>
                     <input
                       type="email"
                       class="form-control"
-                      id="fmail"
-                      name="fmail"
+                      id="F_mail"
+                      name="F_mail"
                     />
                   </div>
 
                   <div class="form-group">
                     <label for="picture">Képek feltöltése:</label>
                     <input
-                      type="picture"
+                      type="file"
                       class="form-control"
                       id="picture"
                       name="picture"
                     />
                   </div>
-
+<div>     
                   <input type="submit" class="btn btn-primary" />
+                </div>
                 </form>
               </div>
             </div>
