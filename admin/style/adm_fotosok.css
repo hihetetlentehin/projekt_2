@@ -91,9 +91,17 @@ body{
 }
 
 /*Usernev jobb felso sarokban*/
-.wrapper2 .userName label{
+.wrapper2 .userName #username{
     position: absolute;
     top: 10px;
+    right: 10px;
+    color: white;
+}
+
+/*Logout jobb felso sarokban*/
+.wrapper2 .userName #logout{
+    position: absolute;
+    top: 35px;
     right: 10px;
     color: white;
 }
@@ -162,8 +170,8 @@ body{
 
 
 .wrapper2 .content #modify{
- margin-left: 20px;
- width: 20px;
+ margin-left: 0px;
+ width: 90px;
  height: 20px;
  box-align: center;
  background-image: url("C:\Users\User\Desktop\7.félév\Projektmunka 2\Projekt 2\pics\modify.png");
@@ -174,11 +182,11 @@ body{
 }
 
 .wrapper2 .content #delete{
-    width: 20px;
+    width: 60px;
     height: 20px;
     box-align: center;
     background-image: url("C:\Users\User\Desktop\7.félév\Projektmunka 2\Projekt 2\pics\trash.png");
-    margin-left: 20px;
+    margin-left: 5px;
     border-radius: 4px;
     border-color:rgb(174, 174, 174);
 }
