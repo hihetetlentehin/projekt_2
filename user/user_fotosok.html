@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fotósok</title>
+  <link rel="icon" type="image/x-icon" href="..\pics\favicon.ico" alt="logo">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style\user_fotosok.css" rel="stylesheet" type="text/css" /> 
+</head>
+
+<body>
+    <!--Helix img + Navigacios bar-->
+    <div class="wrapper">
+
+        <div class="wrapper1">
+            <img id="nav_img" src="..\pics\helixfelirat500.png" alt="helixlogo_navbar"></img>
+            <div class="navbar">
+                <a href="...">Kezdőlap</a>
+                <a href="...">Rendezvény bejelentés</a>
+                <a href="...">Rendezvényeim</a>
+                <a href="...">Fotósok</a>
+                <a href="...">Videósok</a>
+            </div>
+        </div>
+    
+        <div class="wrapper2">
+          <!--User img + usernév jobb felső sarokban-->
+          <div class="userIcon">
+            <img id="user" src="..\pics\usericon.png" alt="usericon"></img>
+        </div>
+
+        <div class="userName">
+            <label id="username">[Username]</label><br>
+            <label id="logout">Kijelentkezés</label><br>
+        </div>
+
+
+        <div class="content">
+            <h1> Fotósok</h1><br>
+            <table id="tabla" class="table" style="width:70%">
+                <thead>
+                    <tr>
+                        <th>Név</th>
+                        <th>Telefonszám</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr href="">
+                        <td>Tóth János</td>
+                        <td>+36 70 469 7356</td>
+                        <td>tothjani@gmail.com</td>
+                    </tr>
+                    <tr href="">
+                        <td>Tóth János</td>
+                        <td>+36 70 469 7356</td>
+                        <td>tothjani@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="buttons">
+            <div class="action_btn">
+                <button name="prev" class="action_btn prev" type="submit" value="Prev" onclick="myFunction()">Előző oldal</button>
+                <button name="next" class="action_btn next" type="submit" value="Next" onclick="myFunction2()">Következő oldal</button>
+            </div>
+        </div>    
+    </div>
+</body>
+</html>
